@@ -1,0 +1,14 @@
+package problems.ten;
+
+import util.ProblemPrinter;
+
+public class One {
+	
+	
+	public static void main(String[] args) {
+		ProblemPrinter.logFileContent("src/main/resources/OneInfo.txt");
+		
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+package util;
+
+import java.io.InputStream;
+import java.util.Scanner;
+import java.util.logging.Logger;
+
+public class PrintProblems {
+	private Logger logger = Logger.getLogger(PrintProblems.class.getName());
+	public void printProblem(String resourcePath){
+		try(InputStream inputStream = getClass().getResourceAsStream(resourcePath);){
+			Scanner scan = new Scanner(inputStream);
+			while(scan.hasNextLine()){
+				logger.info(scan.nextLine());
+			}
+		} catch (IOException e) {
+			logger.log(Level.SEVERE, "Exception", e);
+		}
+		System.out.println();
+	}
+}

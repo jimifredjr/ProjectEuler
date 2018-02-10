@@ -1,0 +1,37 @@
+package util;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class ProblemPrinter {
+	private static Logger logger = Logger.getGlobal();
+	private static String RESOURCE_PATH = "src/main/resources/";
+	/**
+	 * Print
+	 * @param resourcePath
+	 */
+	public static void logFileContent(String resourcePath){
+		logContent("Logging resource", resourcePath);
+		File file = new File(resourcePath);
+		try(Scanner scan = new Scanner(file)){
+			while(scan.hasNextLine()){
+				logContent(scan.nextLine());
+			}
+		} catch (IOException e) {
+			logger.log(Level.SEVERE, "Exception opening stream to resource", e);
+		}
+	}
+	
+	public static void logContent(String content, String ... args){
+		logger.info(content);
+		for(String arg: args){
+			logger.info("Argument: " + arg);
+		}
+	}
+	
+	
+	
+}

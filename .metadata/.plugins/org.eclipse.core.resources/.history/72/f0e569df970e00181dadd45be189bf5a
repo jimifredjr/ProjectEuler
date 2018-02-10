@@ -1,0 +1,38 @@
+package util;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class ProblemPrinter {
+	private static Logger logger = Logger.getLogger(ProblemPrinter.class.getName());
+	private static ProblemPrinter problemPrinter = new ProblemPrinter();
+	/**
+	 * Print
+	 * @param resourcePath
+	 */
+	public static void logFileContent(String resourcePath){
+		logContent("Logging resource");
+		try(InputStream inputStream = problemPrinter.getClass().getResourceAsStream(resourcePath);
+			Scanner scan = new Scanner(inputStream);){
+			while(scan.hasNextLine()){
+				logger.info(scan.nextLine());
+			}
+		} catch (IOException e) {
+			logger.log(Level.SEVERE, "Exception", e);
+		}
+		System.out.println();
+	}
+	
+	public static void logContent(String content, String ... args){
+		logger.info(content);
+		for(String arg: args){
+			logger.info("Argument: "arg);
+		}
+	}
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package problems.ten;
+
+import processor.Problem;
+
+public class ProblemTwo extends Problem{
+
+	@Override
+	public String getProblemInfoPath() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void logSolution() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+}

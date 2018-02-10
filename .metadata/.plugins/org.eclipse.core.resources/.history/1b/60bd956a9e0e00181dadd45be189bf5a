@@ -1,0 +1,18 @@
+package problems.ten;
+
+import processor.Problem;
+
+public class ProblemTwo extends Problem{
+	private static String INFO_PATH = "problems/ten/TwoInfo.txt";
+	
+	@Override
+	public String getProblemInfoPath() {
+		return INFO_PATH;
+	}
+
+	@Override
+	public void logSolution() {
+		// TODO Auto-generated method stub
+		
+	}
+}

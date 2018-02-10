@@ -1,0 +1,19 @@
+package util;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class PrintProblems {
+	private Logger logger = Logger.getLogger(PrintProblems.class.getName());
+	public void printProblem(){
+		try(InputStream inputStream = getClass().getResourceAsStream("/com/path/to/file.txt");){
+			
+		} catch (IOException e) {
+			logger.log(Level.SEVERE, "Exception", e);
+			e.printStackTrace();
+		}
+		System.out.println();
+	}
+}

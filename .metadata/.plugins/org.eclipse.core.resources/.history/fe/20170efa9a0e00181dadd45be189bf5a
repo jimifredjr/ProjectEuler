@@ -1,0 +1,12 @@
+package problems.ten;
+
+import processor.Problem;
+import util.ProblemPrinter;
+
+public class ProblemOne implements Problem{
+	private static String NAME = "Problem One";
+	private static String INFO = "problems/ten/OneInfo.txt";
+	
+	
+	
+}

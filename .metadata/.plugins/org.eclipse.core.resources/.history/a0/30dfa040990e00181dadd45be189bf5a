@@ -1,0 +1,10 @@
+package processor;
+
+import problems.ten.One;
+
+public class ProblemProcessor {
+	public static void main(String[] args) {
+		One one = new One();
+		
+	}
+}

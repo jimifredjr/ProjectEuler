@@ -1,0 +1,27 @@
+package problems.ten;
+
+import problem.interfaces.Problem;
+import util.ProblemPrinter;
+
+public class One implements Problem{
+	
+	
+	public static void main(String[] args) {
+		ProblemPrinter.logFileContent("src/main/resources/OneInfo.txt");
+		
+	}
+
+	@Override
+	public void logProblem() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void logSolution() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

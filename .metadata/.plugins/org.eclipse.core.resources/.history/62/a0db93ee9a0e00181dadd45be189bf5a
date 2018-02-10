@@ -1,0 +1,26 @@
+package problems.ten;
+
+import processor.Problem;
+import util.ProblemPrinter;
+
+public class ProblemOne implements Problem{
+	private static String NAME = "Problem One";
+	@Override
+	public void logProblem() {
+		ProblemPrinter.logContent(NAME);
+		ProblemPrinter.logFileContent("problems/ten/OneInfo.txt");
+	}
+	@Override
+	public String getProblemName() {
+		return NAME;
+	}
+	
+
+	@Override
+	public void logSolution() {
+		
+	}
+	
+	
+	
+}

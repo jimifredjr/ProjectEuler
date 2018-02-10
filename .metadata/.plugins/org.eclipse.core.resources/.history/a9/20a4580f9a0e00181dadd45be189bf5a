@@ -1,0 +1,7 @@
+package problems.ten;
+
+import processor.Problem;
+
+public class ProblemTwo implements Problem{
+
+}

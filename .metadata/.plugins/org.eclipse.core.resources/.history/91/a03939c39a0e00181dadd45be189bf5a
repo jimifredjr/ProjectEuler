@@ -1,0 +1,7 @@
+package processor;
+
+public abstract class Problem {
+	public abstract String getProblemName();
+	public abstract String getProblemInfoPath();
+	public void logSolution();
+}

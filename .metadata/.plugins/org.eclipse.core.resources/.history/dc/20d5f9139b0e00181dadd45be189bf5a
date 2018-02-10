@@ -1,0 +1,25 @@
+package problems.ten;
+
+import processor.Problem;
+
+public class ProblemTwo implements Problem{
+
+	@Override
+	public void logProblemName() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void logProblem() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void logSolution() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

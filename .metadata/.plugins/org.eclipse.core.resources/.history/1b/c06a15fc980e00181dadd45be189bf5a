@@ -1,0 +1,6 @@
+package problem.interfaces;
+
+public interface Problem {
+	public void logProblem();
+	public void logSolution();
+}

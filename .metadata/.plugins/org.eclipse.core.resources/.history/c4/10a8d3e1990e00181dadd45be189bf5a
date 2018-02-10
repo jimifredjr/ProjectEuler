@@ -1,0 +1,16 @@
+package processor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProblemProcessor {
+	private static List<Problem> problemList = new ArrayList();
+	public static void main(String[] args) {
+		
+		for(Problem problem: problemList){
+			problem.logProblemName();
+			problem.logProblem();
+			problem.logSolution();
+		}
+	}
+}
