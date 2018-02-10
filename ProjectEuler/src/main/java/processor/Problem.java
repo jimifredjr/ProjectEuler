@@ -1,6 +1,6 @@
 package processor;
 
-import util.ProblemPrinter;
+import util.log.ProblemPrinter;
 
 public abstract class Problem {
 	public abstract String getProblemInfoPath();
