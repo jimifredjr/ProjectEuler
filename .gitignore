@@ -2,4 +2,4 @@
 /bin/
 /library/
 .metadata/**
-/recommenders/**
+.recommenders/**
