@@ -6,6 +6,7 @@ import java.util.List;
 
 import problems.ten.ProblemOne;
 import problems.ten.ProblemTwo;
+import problems.thirty.ProblemThirtyFive;
 import problems.thirty.ProblemThirtyFour;
 
 /**
@@ -17,7 +18,8 @@ public class ProblemProcessor {
 	private static List<Problem> problemList = new ArrayList<>(Arrays.asList(
 			new ProblemOne(),
 			new ProblemTwo(),
-			new ProblemThirtyFour()
+			new ProblemThirtyFour(),
+			new ProblemThirtyFive()
 		));
 	
 	public static void main(String[] args) {

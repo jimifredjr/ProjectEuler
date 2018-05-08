@@ -16,8 +16,6 @@ public class ProblemThirtyFour extends Problem{
 
 	@Override
 	public void logSolution() {
-		
-		
 		for(int i = 0; i < 10; i++) {
 			factorialMap.put(i, factorial(i));
 		}
