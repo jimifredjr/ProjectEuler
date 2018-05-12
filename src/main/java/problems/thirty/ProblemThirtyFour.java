@@ -16,6 +16,7 @@ public class ProblemThirtyFour extends Problem{
 
 	@Override
 	public void logSolution() {
+		logContent("Put factorial values 0-9 in a hashmap");
 		for(int i = 0; i < 10; i++) {
 			factorialMap.put(i, factorial(i));
 		}
