@@ -23,6 +23,7 @@ public class ProblemThirtyFour extends Problem{
 		
 		int total = 0;
 		int x = 10;
+		logContent("Upper Bound of: " + 9*Math.pow(10, 7));
 		while(x < 9*Math.pow(10, 7)) {
 			int sum = getDigitFactorialSum(x);
 			if(sum == x) {
