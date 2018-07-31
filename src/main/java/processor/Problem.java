@@ -1,8 +1,10 @@
 package processor;
 
+import java.io.Serializable;
+
 import util.log.ProblemPrinter;
 
-public abstract class Problem {
+public abstract class Problem implements Serializable{
 	public abstract String getProblemInfoPath();
 	public abstract void logSolution();
 	
