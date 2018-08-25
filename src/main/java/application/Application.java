@@ -1,4 +1,4 @@
-package processor;
+package application;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.beans.factory.annotation.Value;
